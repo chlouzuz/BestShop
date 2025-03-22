@@ -11,6 +11,98 @@ html {
 body {
     margin: 0;
     padding: 0;
-    font-family: "Raleway", sans-serif;
-    font-family: "Open Sans", sans-serif;
+    font-family: var(--font-open-sans);
 }  
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 1352px;
+    margin: 0 auto;
+}
+
+
+:root {
+    --color-primary: #08A6E4;
+    --color-secondary: #EB476E;
+    --color-tertiary:#55DFB4;
+
+    --shadow-primary: rgba(7, 172, 230, 0.16);
+
+    --bg-primary: #FFFFFF;
+    --bg-secondary: #F7F7F7;
+
+    --text-primary: #000000;
+    --text-secondary: #A5A5A5;
+
+    --font-raleway: "Raleway", sans-serif;
+    --font-open-sans: "Open Sans", sans-serif;
+}
+
+
+/* --- HEADER --- */
+
+
+.header {
+    height: 70px;
+
+    background-color: var(--bg-primary);
+    box-shadow: 0px 3px 6px #00000029;
+
+}
+
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+  }
+  
+
+.header__logo {
+    color: var(--color-primary);
+ /*   font: normal normal 300 32px/37px Raleway; */
+    font-family: var(--font-raleway);
+    font-size: 32px;
+    line-height: 37px;
+    font-weight: 300; 
+}
+
+.header__nav {
+    display: flex;
+    
+    
+}
+
+.nav__element {
+    padding: 0 35pxpx;
+
+}
+
+.nav__element {
+    color: var(--bg-secondary);
+  /*  font: normal normal bold 11px/15px Open Sans; */
+    text-transform: uppercase;
+    font-family: var(--font-open-sans);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 3.28px;
+    border-bottom: 4px solid transparent;
+    padding: 28px 18px 22px;
+    display: flex;
+
+
+ 
+}
+
+.nav__element:hover {
+    color: var(--text-primary);
+    border-color: var(--color-primary);
+}
+
+.nav__element:last-child {
+    padding-right: 0;
+  }
+  
